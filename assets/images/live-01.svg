@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title desc">
+  <title id="title">Live performance placeholder 01</title>
+  <desc id="desc">Minimal monochrome wide placeholder for live performance documentation.</desc>
+  <rect width="1100" height="760" fill="#151412"/>
+  <rect x="72" y="72" width="956" height="520" fill="#24221f"/>
+  <path d="M72 592 L1028 592 L880 706 L220 706 Z" fill="#34302a"/>
+  <circle cx="288" cy="206" r="86" fill="#f7f4ee" opacity="0.78"/>
+  <circle cx="742" cy="218" r="112" fill="#d9d0c2" opacity="0.38"/>
+  <rect x="170" y="438" width="238" height="72" fill="#0f0e0d"/>
+  <rect x="694" y="396" width="220" height="114" fill="#0f0e0d"/>
+  <path d="M245 510 L350 306 L456 510 Z" fill="#c9beb0" opacity="0.52"/>
+  <path d="M612 510 L706 332 L800 510 Z" fill="#f7f4ee" opacity="0.42"/>
+  <text x="72" y="670" fill="#f7f4ee" font-family="Arial, sans-serif" font-size="28" opacity="0.72">live documentation / replace with photo</text>
+</svg>

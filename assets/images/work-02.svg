@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Work 02 placeholder</title>
+  <desc id="desc">Sample still for a single-channel video work.</desc>
+  <rect width="900" height="650" fill="#fffdf8"/>
+  <rect x="70" y="70" width="760" height="510" fill="#59624a"/>
+  <rect x="148" y="132" width="604" height="80" fill="#191713"/>
+  <rect x="148" y="254" width="250" height="240" fill="#9b3d2f"/>
+  <rect x="440" y="254" width="312" height="240" fill="#ded5c8"/>
+  <text x="70" y="625" fill="#191713" font-family="Arial, sans-serif" font-size="24">work-02</text>
+</svg>

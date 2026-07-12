@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="920" viewBox="0 0 760 920" role="img" aria-labelledby="title desc">
+  <title id="title">Live performance placeholder 02</title>
+  <desc id="desc">Minimal vertical placeholder for sound performance documentation.</desc>
+  <rect width="760" height="920" fill="#ebe5da"/>
+  <rect x="74" y="80" width="612" height="624" fill="#1a1815"/>
+  <rect x="132" y="144" width="496" height="338" fill="#2f2b25"/>
+  <circle cx="382" cy="278" r="96" fill="#f7f4ee" opacity="0.72"/>
+  <path d="M142 584 C260 498 362 650 494 560 S620 512 654 548" fill="none" stroke="#d9d0c2" stroke-width="8" opacity="0.72"/>
+  <rect x="132" y="724" width="358" height="8" fill="#191713"/>
+  <text x="74" y="820" fill="#191713" font-family="Arial, sans-serif" font-size="28">sound performance</text>
+</svg>

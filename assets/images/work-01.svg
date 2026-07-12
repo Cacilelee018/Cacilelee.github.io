@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Work 01 placeholder</title>
+  <desc id="desc">Sample still for an animation work.</desc>
+  <rect width="900" height="650" fill="#f7f4ee"/>
+  <rect x="58" y="58" width="784" height="534" fill="#2b5268"/>
+  <rect x="112" y="108" width="260" height="210" fill="#fffdf8"/>
+  <circle cx="608" cy="358" r="154" fill="#ead7cd"/>
+  <path d="M110 455 C230 368 338 540 486 460 S682 310 790 410" fill="none" stroke="#191713" stroke-width="7"/>
+  <text x="60" y="625" fill="#191713" font-family="Arial, sans-serif" font-size="24">work-01</text>
+</svg>

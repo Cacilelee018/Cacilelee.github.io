@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Artist portfolio template for animation stills, video works, music, performances, CV, artist statement, and contact.">
+    <meta name="theme-color" content="#f7f4ee">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Artist Name - Animation Portfolio">
+    <meta property="og:description" content="Selected animation stills, moving image works, music, performances, CV, and artist statement.">
+    <meta property="og:image" content="https://yourname.github.io/assets/images/og-image.svg">
+    <meta property="og:url" content="https://yourname.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Artist Name - Animation Portfolio</title>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#hero" aria-label="Go to top">
+        <span>Artist Name</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#works">Works</a>
+        <a href="#stills">Stills</a>
+        <a href="#video">Video</a>
+        <a href="#sound">Sound</a>
+        <a href="#live">Live</a>
+        <a href="#statement">Statement</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero" aria-labelledby="hero-title" data-reveal>
+        <div class="hero__content">
+          <p class="eyebrow">Animation / Moving Image / Visual Essay</p>
+          <h1 id="hero-title">Artist Name</h1>
+          <p class="hero__lead">
+            일상의 감각과 기억의 잔상을 애니메이션, 영상, 드로잉으로 기록하는 작가 포트폴리오 템플릿입니다.
+          </p>
+        </div>
+        <figure class="hero__image">
+          <img data-hero-frame src="assets/images/hero-still.svg" alt="Abstract animation still placeholder" width="1200" height="900">
+          <figcaption data-frame-caption>Frame 01 - Replace with a representative still or installation view.</figcaption>
+          <div class="frame-player" aria-label="Hero frame preview controls">
+            <button type="button" data-frame-prev aria-label="이전 프레임">←</button>
+            <input data-frame-range type="range" min="0" max="3" value="0" aria-label="대표 이미지 프레임 선택">
+            <button type="button" data-frame-next aria-label="다음 프레임">→</button>
+            <output data-frame-label>01 / 04</output>
+          </div>
+        </figure>
+      </section>
+
+      <section class="work-ticker" aria-label="Selected work titles">
+        <p class="sr-only">Fragments of a Small Room, Warm Noise Archive, Loop for Two Windows</p>
+        <div class="work-ticker__track" aria-hidden="true">
+          <div class="work-ticker__group">
+            <span>Fragments of a Small Room</span>
+            <span>Warm Noise Archive</span>
+            <span>Loop for Two Windows</span>
+            <span>Animation Stills</span>
+            <span>Video Works</span>
+            <span>Sound Works</span>
+            <span>Live Performance</span>
+          </div>
+          <div class="work-ticker__group">
+            <span>Fragments of a Small Room</span>
+            <span>Warm Noise Archive</span>
+            <span>Loop for Two Windows</span>
+            <span>Animation Stills</span>
+            <span>Video Works</span>
+            <span>Sound Works</span>
+            <span>Live Performance</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="works" aria-labelledby="works-title" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Selected Works</p>
+          <h2 id="works-title">대표 작업</h2>
+        </div>
+
+        <div class="filter-bar" aria-label="작업 필터">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="animation">Animation</button>
+          <button class="filter-button" type="button" data-filter="video">Video</button>
+          <button class="filter-button" type="button" data-filter="installation">Installation</button>
+          <output class="filter-count" data-filter-count>3 works</output>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card" data-category="animation">
+            <button class="work-card__button" type="button" data-project="project-01">
+              <img src="assets/images/work-01.svg" alt="Still from sample animation work A" width="900" height="650" loading="lazy">
+              <span class="work-card__meta">Animation / 2026</span>
+              <strong>Fragments of a Small Room</strong>
+            </button>
+          </article>
+          <article class="work-card" data-category="video">
+            <button class="work-card__button" type="button" data-project="project-02">
+              <img src="assets/images/work-02.svg" alt="Still from sample video work B" width="900" height="650" loading="lazy">
+              <span class="work-card__meta">Single-channel video / 2025</span>
+              <strong>Warm Noise Archive</strong>
+            </button>
+          </article>
+          <article class="work-card" data-category="installation">
+            <button class="work-card__button" type="button" data-project="project-03">
+              <img src="assets/images/work-03.svg" alt="Installation documentation placeholder" width="900" height="650" loading="lazy">
+              <span class="work-card__meta">Installation / 2024</span>
+              <strong>Loop for Two Windows</strong>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="stills" aria-labelledby="stills-title" data-reveal>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Animation Stills</p>
+            <h2 id="stills-title">애니메이션 캡처 갤러리</h2>
+          </div>
+          <div class="gallery-controls" aria-label="갤러리 보기 방식">
+            <button class="view-button is-active" type="button" data-gallery-view="grid">Grid</button>
+            <button class="view-button" type="button" data-gallery-view="sequence">Sequence</button>
+          </div>
+        </div>
+        <div class="still-grid" data-still-grid>
+          <button type="button" class="still-item" data-project="project-01">
+            <img src="assets/images/still-01.svg" alt="Animation still sample 1" width="780" height="980" loading="lazy">
+          </button>
+          <button type="button" class="still-item still-item--wide" data-project="project-01">
+            <img src="assets/images/still-02.svg" alt="Animation still sample 2" width="1100" height="740" loading="lazy">
+          </button>
+          <button type="button" class="still-item" data-project="project-02">
+            <img src="assets/images/still-03.svg" alt="Animation still sample 3" width="780" height="980" loading="lazy">
+          </button>
+          <button type="button" class="still-item still-item--wide" data-project="project-03">
+            <img src="assets/images/still-04.svg" alt="Animation still sample 4" width="1100" height="740" loading="lazy">
+          </button>
+        </div>
+      </section>
+
+      <section class="section" id="video" aria-labelledby="video-title" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Video Works</p>
+          <h2 id="video-title">영상 작업</h2>
+        </div>
+
+        <div class="video-list">
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe
+                title="Sample embedded video"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+              <p class="eyebrow">YouTube / Vimeo Embed</p>
+              <h3>Embedded Work Title</h3>
+              <p>유튜브 또는 비메오 영상 URL을 임베드 주소로 바꾸어 넣는 예시입니다.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame video-frame--local">
+              <video controls preload="metadata" poster="assets/images/video-poster.svg">
+                <source src="assets/videos/sample-video.mp4" type="video/mp4">
+                브라우저가 mp4 영상을 지원하지 않습니다.
+              </video>
+            </div>
+            <div>
+              <p class="eyebrow">Local MP4</p>
+              <h3>Uploaded MP4 Work</h3>
+              <p>짧은 영상 파일은 <code>assets/videos/</code> 폴더에 넣고 파일명을 교체하세요.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--sound" id="sound" aria-labelledby="sound-title" data-reveal>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Sound / Music</p>
+            <h2 id="sound-title">음악 작업</h2>
+          </div>
+          <a class="button button--light" href="https://soundcloud.com/yourhandle" target="_blank" rel="noreferrer">SoundCloud 열기</a>
+        </div>
+
+        <div class="sound-layout">
+          <article class="sound-player">
+            <iframe
+              title="SoundCloud player for sample music work"
+              loading="lazy"
+              scrolling="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%239b3d2f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+          </article>
+          <div class="sound-notes">
+            <p class="eyebrow">Track Notes</p>
+            <h3>Sound Piece / Performance Score</h3>
+            <p>
+              SoundCloud에 업로드한 음악, 사운드 작업, 공연 스코어를 소개하는 영역입니다.
+              위 iframe의 `YOUR_TRACK_ID`를 본인 트랙 ID로 바꾸거나 SoundCloud에서 복사한 embed 코드를 붙여 넣으세요.
+            </p>
+            <dl class="info-list">
+              <div><dt>Format</dt><dd>SoundCloud embed / album / playlist</dd></div>
+              <div><dt>Role</dt><dd>Composition, production, performance</dd></div>
+              <div><dt>Use for</dt><dd>Music releases, sound design, live sets</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="live" aria-labelledby="live-title" data-reveal>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Performance Documentation</p>
+            <h2 id="live-title">공연 현장 사진</h2>
+          </div>
+        </div>
+        <div class="live-grid">
+          <button type="button" class="live-card live-card--large" data-live-image="assets/images/live-01.svg" data-live-caption="Live Performance 01 / venue, year">
+            <img src="assets/images/live-01.svg" alt="Live performance documentation placeholder 1" width="1100" height="760" loading="lazy">
+            <span><strong>Live Performance 01</strong><em>Venue / 2026</em></span>
+          </button>
+          <button type="button" class="live-card" data-live-image="assets/images/live-02.svg" data-live-caption="Sound performance documentation / venue, year">
+            <img src="assets/images/live-02.svg" alt="Live performance documentation placeholder 2" width="760" height="920" loading="lazy">
+            <span><strong>Sound Performance</strong><em>Documentation / 2025</em></span>
+          </button>
+          <button type="button" class="live-card" data-live-image="assets/images/live-03.svg" data-live-caption="Stage setup and rehearsal / venue, year">
+            <img src="assets/images/live-03.svg" alt="Live performance documentation placeholder 3" width="760" height="920" loading="lazy">
+            <span><strong>Stage / Rehearsal</strong><em>Setup view / 2024</em></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section section--statement" id="statement" aria-labelledby="statement-title" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Artist Statement</p>
+          <h2 id="statement-title">작가노트</h2>
+        </div>
+        <div class="statement">
+          <p>
+            저는 움직임이 완성된 장면보다 장면이 만들어지기 직전의 떨림에 관심이 있습니다.
+            반복되는 선, 잘린 프레임, 소리의 작은 어긋남을 통해 기억이 이미지가 되는 과정을 다룹니다.
+          </p>
+          <p>
+            이 영역에는 600자 내외의 작가노트를 넣는 것을 권장합니다. 전시 서문처럼 너무 무겁게 쓰기보다,
+            작업의 출발점, 자주 쓰는 재료, 관객에게 남기고 싶은 감각을 분명하게 적어주세요.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="cv" aria-labelledby="cv-title" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">CV</p>
+          <h2 id="cv-title">이력</h2>
+          <a class="button button--light" href="assets/documents/artist-cv.pdf" download>PDF 다운로드</a>
+        </div>
+
+        <div class="cv-layout">
+          <div class="cv-block">
+            <h3>Education</h3>
+            <ol class="cv-list">
+              <li><time datetime="2026">2026</time><span>MFA Animation, Sample University</span></li>
+              <li><time datetime="2023">2023</time><span>BFA Visual Communication, Sample College</span></li>
+            </ol>
+          </div>
+          <div class="cv-block">
+            <h3>Screenings / Exhibitions</h3>
+            <ol class="cv-list">
+              <li><time datetime="2026">2026</time><span>Short Animation Screening, Seoul</span></li>
+              <li><time datetime="2025">2025</time><span>Moving Image Festival, Tokyo</span></li>
+              <li><time datetime="2024">2024</time><span>Open Studio: Loop Studies</span></li>
+            </ol>
+          </div>
+          <div class="cv-block">
+            <h3>Awards / Grants</h3>
+            <ol class="cv-list">
+              <li><time datetime="2025">2025</time><span>Emerging Artist Production Grant</span></li>
+              <li><time datetime="2024">2024</time><span>Audience Choice, Sample Animation Night</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="about" aria-labelledby="about-title" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">작가 소개</h2>
+        </div>
+        <div class="about-layout">
+          <img src="assets/images/profile.svg" alt="Artist portrait placeholder" width="720" height="900" loading="lazy">
+          <div class="about-copy">
+            <p>
+              Artist Name은 애니메이션과 영상 매체를 기반으로 움직임, 기억, 장소성을 탐구합니다.
+              독립 단편 애니메이션, 전시 영상, 협업 프로젝트를 진행해왔습니다.
+            </p>
+            <dl class="info-list">
+              <div><dt>Based in</dt><dd>Seoul / Tokyo</dd></div>
+              <div><dt>Medium</dt><dd>2D animation, video, drawing, installation</dd></div>
+              <div><dt>Tools</dt><dd>After Effects, Blender, Procreate, Premiere Pro</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title" data-reveal>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">상영, 전시, 협업 문의</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:hello@example.com">hello@example.com</a>
+          <a href="https://www.instagram.com/yourhandle/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://vimeo.com/yourhandle" target="_blank" rel="noreferrer">Vimeo</a>
+        </div>
+      </section>
+    </main>
+
+    <button class="to-top" type="button" data-to-top aria-label="맨 위로 이동">↑</button>
+
+    <dialog class="project-modal" data-modal aria-labelledby="modal-title">
+      <button class="modal-close" type="button" data-modal-close aria-label="닫기">×</button>
+      <div class="modal-body">
+        <img data-modal-image src="assets/images/work-01.svg" alt="" width="1200" height="850">
+        <div class="modal-copy">
+          <p class="eyebrow" data-modal-meta>Animation / 2026</p>
+          <h2 id="modal-title" data-modal-title>Fragments of a Small Room</h2>
+          <p data-modal-description>
+            샘플 프로젝트 설명입니다. 실제 작업의 제작 연도, 러닝타임, 사용 기법, 상영 이력, 기획 의도를 넣어주세요.
+          </p>
+          <dl class="project-facts" data-modal-facts></dl>
+          <div class="modal-actions">
+            <button type="button" data-modal-prev>이전 작업</button>
+            <button type="button" data-modal-next>다음 작업</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="image-modal" data-image-modal aria-labelledby="image-modal-title">
+      <button class="modal-close" type="button" data-image-modal-close aria-label="닫기">×</button>
+      <figure>
+        <img data-image-modal-image src="assets/images/live-01.svg" alt="" width="1200" height="850">
+        <figcaption id="image-modal-title" data-image-modal-caption>Live Performance 01 / venue, year</figcaption>
+      </figure>
+    </dialog>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Artist Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

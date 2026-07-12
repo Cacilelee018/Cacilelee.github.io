@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Work 03 placeholder</title>
+  <desc id="desc">Sample documentation placeholder for installation work.</desc>
+  <rect width="900" height="650" fill="#ded5c8"/>
+  <rect x="110" y="90" width="680" height="470" fill="#191713"/>
+  <rect x="160" y="140" width="250" height="260" fill="#f7f4ee"/>
+  <rect x="490" y="140" width="250" height="260" fill="#2b5268"/>
+  <path d="M110 560 L450 430 L790 560" fill="#706b62"/>
+  <text x="110" y="625" fill="#191713" font-family="Arial, sans-serif" font-size="24">work-03</text>
+</svg>

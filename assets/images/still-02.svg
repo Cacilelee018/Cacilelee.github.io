@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740" role="img" aria-labelledby="title">
+  <title id="title">Still 02 placeholder</title>
+  <rect width="1100" height="740" fill="#fffdf8"/>
+  <rect x="96" y="92" width="908" height="420" fill="#9b3d2f"/>
+  <path d="M120 560 C300 450 430 650 600 545 S850 405 990 510" fill="none" stroke="#191713" stroke-width="10"/>
+  <text x="96" y="675" fill="#191713" font-family="Arial, sans-serif" font-size="34">still-02</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
+  <title id="title">Video poster placeholder</title>
+  <rect width="1280" height="720" fill="#191713"/>
+  <circle cx="640" cy="360" r="96" fill="#f7f4ee"/>
+  <path d="M620 306 L620 414 L714 360 Z" fill="#9b3d2f"/>
+  <text x="78" y="640" fill="#f7f4ee" font-family="Arial, sans-serif" font-size="42">Replace with video poster image</text>
+</svg>

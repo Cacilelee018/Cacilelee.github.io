@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740" role="img" aria-labelledby="title">
+  <title id="title">Still 04 placeholder</title>
+  <rect width="1100" height="740" fill="#ded5c8"/>
+  <rect x="90" y="90" width="420" height="470" fill="#2b5268"/>
+  <rect x="590" y="90" width="420" height="470" fill="#191713"/>
+  <circle cx="550" cy="555" r="92" fill="#fffdf8"/>
+  <text x="90" y="675" fill="#191713" font-family="Arial, sans-serif" font-size="34">still-04</text>
+</svg>

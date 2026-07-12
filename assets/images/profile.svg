@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">Portrait placeholder for artist profile.</desc>
+  <rect width="720" height="900" fill="#ead7cd"/>
+  <circle cx="360" cy="295" r="128" fill="#9b3d2f"/>
+  <rect x="160" y="485" width="400" height="270" rx="150" fill="#2b5268"/>
+  <text x="70" y="835" fill="#191713" font-family="Arial, sans-serif" font-size="34">profile image</text>
+</svg>

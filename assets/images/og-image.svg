@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">Open Graph preview placeholder</title>
+  <rect width="1200" height="630" fill="#f7f4ee"/>
+  <rect x="70" y="68" width="1060" height="494" fill="#191713"/>
+  <rect x="760" y="120" width="300" height="300" fill="#9b3d2f"/>
+  <circle cx="895" cy="320" r="90" fill="#ead7cd"/>
+  <text x="120" y="235" fill="#fffdf8" font-family="Georgia, serif" font-size="92">Artist Name</text>
+  <text x="124" y="318" fill="#d9d0c2" font-family="Arial, sans-serif" font-size="34">Animation Portfolio</text>
+  <text x="124" y="470" fill="#d9d0c2" font-family="Arial, sans-serif" font-size="28">Selected works / stills / video / CV</text>
+</svg>

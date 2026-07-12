@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="920" viewBox="0 0 760 920" role="img" aria-labelledby="title desc">
+  <title id="title">Live performance placeholder 03</title>
+  <desc id="desc">Minimal vertical placeholder for rehearsal and stage setup documentation.</desc>
+  <rect width="760" height="920" fill="#f7f4ee"/>
+  <rect x="86" y="92" width="588" height="596" fill="#d9d0c2"/>
+  <rect x="138" y="144" width="202" height="292" fill="#191713"/>
+  <rect x="420" y="144" width="202" height="292" fill="#5d584f"/>
+  <circle cx="382" cy="572" r="82" fill="#8d8275"/>
+  <path d="M110 720 L650 720" stroke="#191713" stroke-width="10"/>
+  <path d="M198 720 L306 508 L414 720" fill="none" stroke="#191713" stroke-width="6"/>
+  <text x="86" y="820" fill="#191713" font-family="Arial, sans-serif" font-size="28">stage / rehearsal</text>
+</svg>
