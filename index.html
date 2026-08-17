@@ -31,10 +31,8 @@
         <span></span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#works">Works</a>
-        <a href="#stills">Stills</a>
-        <a href="#video">Video</a>
-        <a href="#sound">Sound</a>
+        <a href="#video">Animation</a>
+        <a href="#sound">Music</a>
         <a href="#live">Live</a>
         <a href="#statement">Statement</a>
         <a href="#cv">CV</a>
@@ -52,118 +50,39 @@
             지역 설화와 음악의 구조, 공연 현장의 감각을 애니메이션과 오디오비주얼 콘텐츠로 확장하는 작가입니다.
           </p>
         </div>
-      </section>
-
-      <section class="work-ticker" aria-label="Selected work titles">
-        <p class="sr-only">도담도담 여수, 미지의 나에게 스페이스 오디세이, 누리의 빛 소리의 물결, 정물화 Still Life</p>
-        <div class="work-ticker__track" aria-hidden="true">
-          <div class="work-ticker__group">
-            <span>도담도담 여수</span>
-            <span>미지의 나에게, 스페이스 오디세이</span>
-            <span>누리의 빛, 소리의 물결</span>
-            <span>정물화 (Still Life)</span>
-            <span>오디오비주얼 퍼포먼스</span>
-            <span>지역문화콘텐츠</span>
+        <aside class="featured-window" aria-labelledby="featured-title">
+          <div class="featured-window__header">
+            <p class="eyebrow">Selected Works</p>
+            <h2 id="featured-title">대표 작업</h2>
           </div>
-          <div class="work-ticker__group">
-            <span>도담도담 여수</span>
-            <span>미지의 나에게, 스페이스 오디세이</span>
-            <span>누리의 빛, 소리의 물결</span>
-            <span>정물화 (Still Life)</span>
-            <span>오디오비주얼 퍼포먼스</span>
-            <span>지역문화콘텐츠</span>
+          <div class="keyword-field" aria-label="대표 작업 키워드">
+            <span class="keyword keyword--a">도담도담 여수</span>
+            <span class="keyword keyword--b">Animation IP</span>
+            <span class="keyword keyword--c">스페이스 오디세이</span>
+            <span class="keyword keyword--d">Audiovisual</span>
+            <span class="keyword keyword--e">누리의 빛</span>
+            <span class="keyword keyword--f">정물화</span>
+            <span class="keyword keyword--g">Sound</span>
+            <span class="keyword keyword--h">혜류뮴</span>
           </div>
-        </div>
-      </section>
-
-      <section class="section" id="works" aria-labelledby="works-title" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Selected Works</p>
-          <h2 id="works-title">대표 작업</h2>
-        </div>
-
-        <div class="filter-bar" aria-label="작업 필터">
-          <button class="filter-button is-active" type="button" data-filter="all">All</button>
-          <button class="filter-button" type="button" data-filter="animation">Animation</button>
-          <button class="filter-button" type="button" data-filter="audiovisual">Audiovisual</button>
-          <button class="filter-button" type="button" data-filter="music">Music</button>
-          <output class="filter-count" data-filter-count>4 works</output>
-        </div>
-
-        <div class="work-grid">
-          <article class="work-card" data-category="animation">
-            <button class="work-card__button" type="button" data-project="project-01">
-              <img src="assets/images/work-01.svg" alt="도담도담 여수 애니메이션 IP 프로젝트 대표 이미지 자리" width="900" height="650" loading="lazy">
-              <span class="work-card__meta">Animation IP / 2026-present</span>
-              <strong>도담도담 여수</strong>
-            </button>
-          </article>
-          <article class="work-card" data-category="audiovisual">
-            <button class="work-card__button" type="button" data-project="project-02">
-              <img src="assets/images/work-02.svg" alt="미지의 나에게 스페이스 오디세이 오디오비주얼 작업 이미지 자리" width="900" height="650" loading="lazy">
-              <span class="work-card__meta">Audiovisual / 2026-present</span>
-              <strong>미지의 나에게, 스페이스 오디세이</strong>
-            </button>
-          </article>
-          <article class="work-card" data-category="audiovisual">
-            <button class="work-card__button" type="button" data-project="project-03">
-              <img src="assets/images/work-03.svg" alt="누리의 빛 소리의 물결 공연 영상 작업 이미지 자리" width="900" height="650" loading="lazy">
-              <span class="work-card__meta">Audiovisual Performance / 2025</span>
-              <strong>누리의 빛, 소리의 물결</strong>
-            </button>
-          </article>
-          <article class="work-card" data-category="music">
-            <button class="work-card__button" type="button" data-project="project-04">
-              <img src="assets/images/video-poster.svg" alt="정물화 Still Life 음악 작업 이미지 자리" width="900" height="650" loading="lazy">
-              <span class="work-card__meta">Single Album / 2024-2025</span>
-              <strong>정물화 (Still Life)</strong>
-            </button>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section--soft" id="stills" aria-labelledby="stills-title" data-reveal>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Animation Stills</p>
-            <h2 id="stills-title">애니메이션 캡처 갤러리</h2>
-          </div>
-          <div class="gallery-controls" aria-label="갤러리 보기 방식">
-            <button class="view-button is-active" type="button" data-gallery-view="grid">Grid</button>
-            <button class="view-button" type="button" data-gallery-view="sequence">Sequence</button>
-          </div>
-        </div>
-        <div class="still-grid" data-still-grid>
-          <button type="button" class="still-item" data-project="project-01">
-            <img src="assets/images/still-01.svg" alt="Animation still sample 1" width="780" height="980" loading="lazy">
-          </button>
-          <button type="button" class="still-item still-item--wide" data-project="project-01">
-            <img src="assets/images/still-02.svg" alt="Animation still sample 2" width="1100" height="740" loading="lazy">
-          </button>
-          <button type="button" class="still-item" data-project="project-02">
-            <img src="assets/images/still-03.svg" alt="Animation still sample 3" width="780" height="980" loading="lazy">
-          </button>
-          <button type="button" class="still-item still-item--wide" data-project="project-03">
-            <img src="assets/images/still-04.svg" alt="Animation still sample 4" width="1100" height="740" loading="lazy">
-          </button>
-        </div>
+        </aside>
       </section>
 
       <section class="section" id="video" aria-labelledby="video-title" data-reveal>
         <div class="section-heading">
-          <p class="eyebrow">Video Works</p>
-          <h2 id="video-title">영상 작업</h2>
+          <p class="eyebrow">Animation</p>
+          <h2 id="video-title">애니메이션</h2>
         </div>
 
         <div class="video-list">
           <article class="video-card">
             <div class="video-frame">
-              <div class="video-placeholder" role="img" aria-label="유튜브 또는 비메오 영상 링크를 넣을 자리">
-                <span>영상 링크 준비 중</span>
+              <div class="video-placeholder" role="img" aria-label="유튜브 애니메이션 링크를 넣을 자리">
+                <span>애니메이션 링크 준비 중</span>
               </div>
             </div>
             <div>
-              <p class="eyebrow">YouTube / Vimeo Embed</p>
+              <p class="eyebrow">YouTube Embed</p>
               <h3>미지의 나에게, 스페이스 오디세이</h3>
               <p>클래식 음악의 구조와 정서 흐름을 우주 다큐멘터리 형식의 영상으로 구성한 오디오비주얼 작업입니다. 영상 링크가 준비되면 iframe 주소를 교체하세요.</p>
             </div>
@@ -179,7 +98,7 @@
             <div>
               <p class="eyebrow">Local MP4</p>
               <h3>누리의 빛, 소리의 물결</h3>
-              <p>사극풍 영상과 생성형 이미지를 활용해 클래식 음악의 정서를 인물 중심의 시각적 내러티브로 전환한 공연 영상 작업입니다.</p>
+              <p>사극풍 영상과 생성형 이미지를 활용해 클래식 음악의 정서를 인물 중심의 시각적 내러티브로 전환한 오디오비주얼 작업입니다.</p>
             </div>
           </article>
         </div>
@@ -188,8 +107,8 @@
       <section class="section section--sound" id="sound" aria-labelledby="sound-title" data-reveal>
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Sound / Music</p>
-            <h2 id="sound-title">음악 작업</h2>
+            <p class="eyebrow">Music</p>
+            <h2 id="sound-title">음악</h2>
           </div>
           <a class="button button--light" href="https://soundcloud.com/" target="_blank" rel="noreferrer">SoundCloud 열기</a>
         </div>
@@ -207,7 +126,7 @@
             <p class="eyebrow">Track Notes</p>
             <h3>정물화 (Still Life)</h3>
             <p>
-              싱글 앨범 제작 및 발매 과정에 참여한 음악 작업입니다. 작사, 멜로디 라인 작곡,
+              싱글 앨범 제작 및 발매 과정에 참여한 음악 프로젝트입니다. 작사, 멜로디 라인 작곡,
               보컬 피처링과 레코딩 과정에 참여했습니다. SoundCloud 트랙이 준비되면 위 플레이어의 트랙 ID를 교체하세요.
             </p>
             <dl class="info-list">
@@ -223,20 +142,20 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Performance Documentation</p>
-            <h2 id="live-title">공연 현장 사진</h2>
+            <h2 id="live-title">공연 현장</h2>
           </div>
         </div>
         <div class="live-grid">
           <button type="button" class="live-card live-card--large" data-live-image="assets/images/live-01.svg" data-live-caption="미지의 나에게, 스페이스 오디세이 / 국립아시아문화전당 극장 3 / 2026 예정">
-            <img src="assets/images/live-01.svg" alt="미지의 나에게 스페이스 오디세이 공연 현장 사진 자리" width="1100" height="760" loading="lazy">
+            <img src="assets/images/live-01.svg" alt="미지의 나에게 스페이스 오디세이 공연 현장 기록 자리" width="1100" height="760" loading="lazy">
             <span><strong>미지의 나에게, 스페이스 오디세이</strong><em>ACC 극장 3 / 2026 예정</em></span>
           </button>
           <button type="button" class="live-card" data-live-image="assets/images/live-02.svg" data-live-caption="누리의 빛, 소리의 물결 / 오디오비주얼 퍼포먼스 / 2025">
-            <img src="assets/images/live-02.svg" alt="누리의 빛 소리의 물결 공연 현장 사진 자리" width="760" height="920" loading="lazy">
+            <img src="assets/images/live-02.svg" alt="누리의 빛 소리의 물결 공연 현장 기록 자리" width="760" height="920" loading="lazy">
             <span><strong>누리의 빛, 소리의 물결</strong><em>오디오비주얼 퍼포먼스 / 2025</em></span>
           </button>
           <button type="button" class="live-card" data-live-image="assets/images/live-03.svg" data-live-caption="공연 현장 영상·음향·조명 오퍼레이팅 기록">
-            <img src="assets/images/live-03.svg" alt="공연 현장 오퍼레이팅과 리허설 사진 자리" width="760" height="920" loading="lazy">
+            <img src="assets/images/live-03.svg" alt="공연 현장 오퍼레이팅과 리허설 기록 자리" width="760" height="920" loading="lazy">
             <span><strong>Performance Operation</strong><em>Video / Sound / Lighting</em></span>
           </button>
         </div>
@@ -272,34 +191,34 @@
           <div class="cv-block">
             <h3>Project Experience</h3>
             <ol class="cv-list">
-              <li><time datetime="2026">May.2026 - Present</time><span><strong>여수 설화 기반 애니메이션 IP 프로젝트 &lt;도담도담 여수&gt; 제작</strong><em>지역문화콘텐츠 기획, 캐릭터 디자인, 음악 제작, 애니메이션 제작. 전남문화재단 원스톱창작지원 프로젝트 선정 및 2026 여수세계섬박람회 연계 전시 콘텐츠 제작.</em></span></li>
-              <li><time datetime="2026">Jun.2026 - Present</time><span><strong>클래식 공연 &lt;미지의 나에게, 스페이스 오디세이&gt; 영상 연출 및 오디오비주얼 제작</strong><em>영상감독, 오디오비주얼 콘텐츠 기획 및 연출. 2026 광주광역시 문화예술 민간단체 지원사업 선정 공연 참여.</em></span></li>
-              <li><time datetime="2025">Jun.2025 - Oct.2025</time><span><strong>클래식 공연 &lt;누리의 빛, 소리의 물결&gt; 영상 연출 및 오디오비주얼 제작</strong><em>영상감독, 오디오비주얼 콘텐츠 기획 및 연출, 공연 현장 영상·음향·조명 오퍼레이팅 수행.</em></span></li>
-              <li><time datetime="2024">Oct.2024 - Dec.2025</time><span><strong>Single album &lt;정물화 (Still Life)&gt; 제작 및 발매</strong><em>작사, 멜로디 라인 작곡, 보컬 피처링, 음원 제작 및 발매 과정 참여.</em></span></li>
+              <li><time datetime="2026">May.2026 - Present</time><span><strong>여수 설화 기반 애니메이션 IP 프로젝트 &lt;도담도담 여수&gt; 제작</strong></span></li>
+              <li><time datetime="2026">Jun.2026 - Present</time><span><strong>클래식 공연 &lt;미지의 나에게, 스페이스 오디세이&gt; 영상 연출 및 오디오비주얼 제작</strong></span></li>
+              <li><time datetime="2025">Jun.2025 - Oct.2025</time><span><strong>클래식 공연 &lt;누리의 빛, 소리의 물결&gt; 영상 연출 및 오디오비주얼 제작</strong></span></li>
+              <li><time datetime="2024">Oct.2024 - Dec.2025</time><span><strong>Single album &lt;정물화 (Still Life)&gt; 제작 및 발매</strong></span></li>
             </ol>
           </div>
           <div class="cv-block">
             <h3>Exhibitions / Performances</h3>
             <ol class="cv-list">
-              <li><time datetime="2026">Sep.2026 - Nov.2026</time><span>2026 여수세계섬박람회 연계 전시 예정</span></li>
-              <li><time datetime="2026-11">Nov.2026</time><span>클래식 공연 &lt;미지의 나에게, 스페이스 오디세이&gt; 오디오비주얼 퍼포먼스 예정, 국립아시아문화전당 극장 3</span></li>
-              <li><time datetime="2025-11">Nov.2025</time><span>클래식 공연 &lt;누리의 빛, 소리의 물결&gt; 오디오비주얼 퍼포먼스</span></li>
+              <li><time datetime="2026">Sep.2026 - Nov.2026</time><span><strong>2026 여수세계섬박람회 연계 전시 예정</strong></span></li>
+              <li><time datetime="2026-11">Nov.2026</time><span><strong>클래식 공연 &lt;미지의 나에게, 스페이스 오디세이&gt; 오디오비주얼 퍼포먼스 예정</strong></span></li>
+              <li><time datetime="2025-11">Nov.2025</time><span><strong>클래식 공연 &lt;누리의 빛, 소리의 물결&gt; 오디오비주얼 퍼포먼스</strong></span></li>
             </ol>
           </div>
           <div class="cv-block">
             <h3>Professional Programs</h3>
             <ol class="cv-list">
-              <li><time datetime="2026-08">Aug.2026</time><span><strong>전남콘텐츠코리아랩 콘텐츠 아카데미 - 캐릭터 IP 창작과정</strong><em>한국콘텐츠진흥원, 전라남도, 순천시, 전남정보문화산업진흥원, 전남콘텐츠코리아랩 주관.</em></span></li>
-              <li><time datetime="2024-08">Aug.2024</time><span><strong>ACC 전문인 &lt;콘텐츠 발굴&gt; 2단계 - 체험형 콘텐츠</strong><em>국립아시아문화전당 주관. 어린이·가족 대상 체험형 전시 콘텐츠 기획안 개발 및 전문가 피드백 과정 참여.</em></span></li>
-              <li><time datetime="2024-08">Aug.2024</time><span><strong>아르코무대예술아카데미 크루 양성 과정 - 음향·무대·조명</strong><em>한국문화예술위원회, 국립아시아문화전당 주관. 공연예술 기술 분야 현장 실무 교육 참여.</em></span></li>
+              <li><time datetime="2026-08">Aug.2026</time><span><strong>전남콘텐츠코리아랩 콘텐츠 아카데미 - 캐릭터 IP 창작과정</strong></span></li>
+              <li><time datetime="2024-08">Aug.2024</time><span><strong>ACC 전문인 &lt;콘텐츠 발굴&gt; 2단계 - 체험형 콘텐츠</strong></span></li>
+              <li><time datetime="2024-08">Aug.2024</time><span><strong>아르코무대예술아카데미 크루 양성 과정 - 음향·무대·조명</strong></span></li>
             </ol>
           </div>
           <div class="cv-block">
             <h3>Certifications / Skills</h3>
             <ol class="cv-list">
-              <li><time datetime="2026-06">Jun.2026</time><span>신진예술인 예술활동증명 등록, 한국예술인복지재단, 일반예술활동: 음악 공연 분야</span></li>
-              <li><span class="cv-label">Skills</span><span>지역문화콘텐츠 기획, 체험형 전시 콘텐츠 기획, 오디오비주얼 콘텐츠 기획, 애니메이션 제작, 음악 제작</span></li>
-              <li><span class="cv-label">Software</span><span>Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop, Adobe Illustrator, Procreate, Logic Pro</span></li>
+              <li><time datetime="2026-06">Jun.2026</time><span><strong>신진예술인 예술활동증명 등록</strong></span></li>
+              <li><span class="cv-label">Skills</span><span><strong>지역문화콘텐츠 기획, 체험형 전시 콘텐츠 기획, 오디오비주얼 콘텐츠 기획, 애니메이션 제작, 음악 제작</strong></span></li>
+              <li><span class="cv-label">Software</span><span><strong>Adobe After Effects, Adobe Premiere Pro, Adobe Photoshop, Adobe Illustrator, Procreate, Logic Pro</strong></span></li>
             </ol>
           </div>
         </div>
@@ -311,7 +230,6 @@
           <h2 id="about-title">작가 소개</h2>
         </div>
         <div class="about-layout">
-          <img src="assets/images/profile.svg" alt="이승희 작가 프로필 사진 자리" width="720" height="900" loading="lazy">
           <div class="about-copy">
             <p>
               이승희는 애니메이션, 오디오비주얼, 음악, 공연 제작을 오가며 지역문화콘텐츠와 체험형 전시를 기획·제작합니다.
@@ -329,36 +247,16 @@
       <section class="section contact" id="contact" aria-labelledby="contact-title" data-reveal>
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">상영, 전시, 협업 문의</h2>
+          <h2 id="contact-title">협업문의</h2>
         </div>
         <div class="contact-links">
           <a href="mailto:cacile.lee.018@gmail.com">cacile.lee.018@gmail.com</a>
-          <a href="https://www.instagram.com/yourhandle/" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://vimeo.com/yourhandle" target="_blank" rel="noreferrer">Vimeo</a>
+          <a href="https://www.instagram.com/lee_sghiii?igsh=MTN6NHFrdzdodXRhcw%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">Instagram @lee_sghiii</a>
         </div>
       </section>
     </main>
 
     <button class="to-top" type="button" data-to-top aria-label="맨 위로 이동">↑</button>
-
-    <dialog class="project-modal" data-modal aria-labelledby="modal-title">
-      <button class="modal-close" type="button" data-modal-close aria-label="닫기">×</button>
-      <div class="modal-body">
-        <img data-modal-image src="assets/images/work-01.svg" alt="" width="1200" height="850">
-        <div class="modal-copy">
-          <p class="eyebrow" data-modal-meta>Animation IP / 2026-present</p>
-          <h2 id="modal-title" data-modal-title>도담도담 여수</h2>
-          <p data-modal-description>
-            여수 거문도 신지끼 설화를 기반으로 캐릭터, 음악, 애니메이션 콘텐츠를 기획·제작하는 지역문화콘텐츠 프로젝트입니다.
-          </p>
-          <dl class="project-facts" data-modal-facts></dl>
-          <div class="modal-actions">
-            <button type="button" data-modal-prev>이전 작업</button>
-            <button type="button" data-modal-next>다음 작업</button>
-          </div>
-        </div>
-      </div>
-    </dialog>
 
     <dialog class="image-modal" data-image-modal aria-labelledby="image-modal-title">
       <button class="modal-close" type="button" data-image-modal-close aria-label="닫기">×</button>

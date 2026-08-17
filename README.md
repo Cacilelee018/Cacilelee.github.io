@@ -1,6 +1,6 @@
 # 이승희 Artist Portfolio
 
-GitHub Pages에 바로 올릴 수 있는 이승희 아티스트 포트폴리오 원페이지 사이트입니다. 애니메이션 캡처 이미지, 영상 작업, 음악, 공연 기록, 작가노트, 웹 CV, PDF CV, 연락처를 한 페이지에 정리하는 용도입니다.
+GitHub Pages에 바로 올릴 수 있는 이승희 아티스트 포트폴리오 원페이지 사이트입니다. 애니메이션, 음악, 공연 기록, 작가노트, 웹 CV, PDF CV, 연락처를 한 페이지에 정리하는 용도입니다.
 
 ## 현재 반영된 정보
 
@@ -33,7 +33,7 @@ artist-portfolio-template/
 
 - Artist Statement
 - About
-- Instagram / Vimeo 링크
+- Instagram 링크
 - SoundCloud 링크
 
 SEO와 공유 미리보기를 위해 `<head>` 안의 아래 항목도 바꾸는 것을 권장합니다.
@@ -52,10 +52,8 @@ SEO와 공유 미리보기를 위해 `<head>` 안의 아래 항목도 바꾸는 
 
 ```text
 hero-still.jpg
-work-01.jpg
-work-02.jpg
-still-01.jpg
-profile.jpg
+video-poster.jpg
+live-performance-01.jpg
 og-image.jpg
 ```
 
@@ -80,9 +78,9 @@ GitHub Pages에서는 영문 소문자, 숫자, 하이픈을 사용하는 파일
 
 폰트를 바꾸고 싶으면 `styles.css` 상단의 `--font-sans`, `--font-display` 값만 수정하면 됩니다.
 
-### 영상
+### 애니메이션
 
-첫 번째 영상 카드는 현재 "영상 링크 준비 중" 자리로 두었습니다. 유튜브 또는 비메오를 쓰는 경우:
+첫 번째 애니메이션 카드는 현재 "애니메이션 링크 준비 중" 자리로 두었습니다. 유튜브를 쓰는 경우:
 
 1. 영상 페이지에서 공유 또는 임베드 주소를 복사합니다.
 2. `index.html`의 `id="video"` 섹션에서 `video-placeholder` div를 지우고 iframe embed 코드를 넣습니다.
@@ -93,11 +91,11 @@ mp4 파일을 직접 올리는 경우:
 2. `index.html`에서 `assets/videos/sample-video.mp4`를 새 파일명으로 바꿉니다.
 3. 영상 포스터 이미지는 `assets/images/video-poster.jpg`처럼 따로 넣는 것을 권장합니다.
 
-긴 영상은 GitHub 저장소 용량과 로딩 속도에 부담이 될 수 있으므로 YouTube/Vimeo 임베드를 권장합니다.
+긴 영상은 GitHub 저장소 용량과 로딩 속도에 부담이 될 수 있으므로 YouTube 임베드를 권장합니다.
 
 ### SoundCloud 음악 플레이어
 
-`Sound / Music` 섹션에는 SoundCloud 임베드 플레이어가 들어 있습니다.
+`Music` 섹션에는 SoundCloud 임베드 플레이어가 들어 있습니다.
 
 가장 쉬운 방법:
 
@@ -114,23 +112,23 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YO
 
 플레이리스트를 넣을 때는 `tracks` 대신 SoundCloud에서 제공하는 playlist embed 코드를 그대로 붙여 넣는 편이 안전합니다.
 
-### 공연 현장 사진
+### 공연 현장
 
-공연 사진은 `assets/images/` 폴더에 넣고 `index.html`의 `id="live"` 섹션에서 파일명을 바꾸면 됩니다.
+공연 현장 기록 이미지는 `assets/images/` 폴더에 넣고 `index.html`의 `id="live"` 섹션에서 파일명을 바꾸면 됩니다.
 
 예시:
 
 ```html
-<img src="assets/images/live-performance-01.jpg" alt="공연명 현장 사진">
+<img src="assets/images/live-performance-01.jpg" alt="공연명 현장 기록">
 ```
 
-사진을 클릭했을 때 크게 보이는 이미지도 같은 버튼의 `data-live-image` 값을 함께 바꿔야 합니다.
+클릭했을 때 크게 보이는 이미지도 같은 버튼의 `data-live-image` 값을 함께 바꿔야 합니다.
 
 ```html
 <button data-live-image="assets/images/live-performance-01.jpg" data-live-caption="공연명 / 장소 / 연도">
 ```
 
-공연 사진 파일명 예시:
+공연 현장 기록 파일명 예시:
 
 ```text
 live-performance-01.jpg
@@ -148,44 +146,14 @@ assets/documents/artist-cv.pdf
 
 파일명이 다르면 `index.html`의 `href="assets/documents/artist-cv.pdf"`도 함께 바꿔야 합니다.
 
-## 프로젝트 모달 수정
-
-대표 작업의 상세 내용은 `script.js`의 `projects` 객체에서 수정합니다.
-
-```js
-"project-01": {
-  title: "작업 제목",
-  meta: "Animation / 2026",
-  image: "assets/images/work-01.jpg",
-  alt: "작업 이미지를 설명하는 대체 텍스트",
-  description: "작업 설명",
-  facts: {
-    Runtime: "04:12",
-    Medium: "2D animation",
-    Role: "Direction, animation, editing"
-  }
-}
-```
-
-`index.html`의 버튼에는 같은 id를 넣어야 합니다.
-
-```html
-<button data-project="project-01">
-```
-
 ## 동적 요소 수정
 
 이 템플릿에는 가벼운 동적 요소가 포함되어 있습니다.
 
-- Works 카테고리 필터와 표시 개수
-- Animation Stills의 `Grid / Sequence` 보기 전환
-- Project Detail 모달의 이전/다음 작업 이동
-- 공연 현장 사진 확대 모달
+- 상단 대표 작업 키워드 모션 창
+- 공연 현장 확대 모달
 - 스크롤 등장 효과
-- 작업 제목 티커
 - 맨 위로 이동 버튼
-
-작업 제목 티커는 `index.html`의 `work-ticker` 영역에서 문구를 바꿉니다. 화면 크기가 바뀌어도 끊기지 않도록 `work-ticker__group` 두 개가 완전히 같은 문구 순서를 갖게 유지하세요.
 
 ## GitHub Pages 배포 방법
 
@@ -204,8 +172,8 @@ assets/documents/artist-cv.pdf
 예시 요청:
 
 ```text
-Works 섹션에 새 프로젝트를 추가해줘.
-제목은 "Blue Room Test"이고 이미지는 assets/images/blue-room.jpg를 사용해줘.
+Animation 섹션의 설명을 새 작업 내용으로 바꿔줘.
+제목은 "Blue Room Test"이고 유튜브 임베드 링크를 넣어줘.
 ```
 
 ```text
