@@ -1,6 +1,14 @@
-# Artist Portfolio Template
+# 이승희 Artist Portfolio
 
-GitHub Pages에 바로 올릴 수 있는 아티스트용 원페이지 포트폴리오 템플릿입니다. 애니메이션 캡처 이미지, 영상 작업, 음악, 공연 기록, 작가노트, 웹 CV, PDF CV, 연락처를 한 페이지에 정리하는 용도입니다.
+GitHub Pages에 바로 올릴 수 있는 이승희 아티스트 포트폴리오 원페이지 사이트입니다. 애니메이션 캡처 이미지, 영상 작업, 음악, 공연 기록, 작가노트, 웹 CV, PDF CV, 연락처를 한 페이지에 정리하는 용도입니다.
+
+## 현재 반영된 정보
+
+- 이름: 이승희
+- 이메일: cacile.lee.018@gmail.com
+- 주요 매체: Animation, Audiovisual, Sound, Performance
+- PDF CV: `assets/documents/artist-cv.pdf`
+- 웹 CV 구성: Project Experience, Exhibitions / Performances, Professional Programs, Certifications / Skills
 
 ## 파일 구조
 
@@ -21,16 +29,12 @@ artist-portfolio-template/
 
 ### 기본 정보
 
-`index.html`에서 아래 텍스트를 본인 정보로 바꾸세요.
+`index.html`에서 아래 텍스트와 링크를 필요에 맞게 바꾸세요.
 
-- `Artist Name`
-- 한 줄 소개 문장
 - Artist Statement
 - About
-- 이메일 주소
 - Instagram / Vimeo 링크
 - SoundCloud 링크
-- CV 항목
 
 SEO와 공유 미리보기를 위해 `<head>` 안의 아래 항목도 바꾸는 것을 권장합니다.
 
@@ -78,10 +82,10 @@ GitHub Pages에서는 영문 소문자, 숫자, 하이픈을 사용하는 파일
 
 ### 영상
 
-유튜브 또는 비메오를 쓰는 경우:
+첫 번째 영상 카드는 현재 "영상 링크 준비 중" 자리로 두었습니다. 유튜브 또는 비메오를 쓰는 경우:
 
 1. 영상 페이지에서 공유 또는 임베드 주소를 복사합니다.
-2. `index.html`의 `<iframe src="...">` 값을 교체합니다.
+2. `index.html`의 `id="video"` 섹션에서 `video-placeholder` div를 지우고 iframe embed 코드를 넣습니다.
 
 mp4 파일을 직접 올리는 경우:
 
@@ -102,7 +106,7 @@ mp4 파일을 직접 올리는 경우:
 3. `Embed` 코드를 복사합니다.
 4. `index.html`의 `id="sound"` 섹션 안에 있는 `<iframe ...></iframe>` 부분을 복사한 embed 코드로 바꿉니다.
 
-직접 URL만 바꾸는 경우에는 아래 부분의 `YOUR_TRACK_ID`를 본인 트랙 ID로 교체합니다.
+현재 SoundCloud 버튼과 플레이어는 링크 교체가 필요한 상태입니다. 직접 URL만 바꾸는 경우에는 아래 부분의 `YOUR_TRACK_ID`를 본인 트랙 ID로 교체합니다.
 
 ```html
 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%239b3d2f..."
@@ -173,7 +177,6 @@ assets/documents/artist-cv.pdf
 
 이 템플릿에는 가벼운 동적 요소가 포함되어 있습니다.
 
-- Hero 프레임 슬라이더
 - Works 카테고리 필터와 표시 개수
 - Animation Stills의 `Grid / Sequence` 보기 전환
 - Project Detail 모달의 이전/다음 작업 이동
@@ -181,26 +184,6 @@ assets/documents/artist-cv.pdf
 - 스크롤 등장 효과
 - 작업 제목 티커
 - 맨 위로 이동 버튼
-
-Hero 프레임 슬라이더 이미지는 `script.js`의 `heroFrames` 배열에서 바꿉니다.
-
-```js
-const heroFrames = [
-  {
-    src: "assets/images/hero-still.jpg",
-    alt: "작업 이미지를 설명하는 대체 텍스트",
-    caption: "Frame 01 - 짧은 설명"
-  }
-];
-```
-
-프레임 수를 4개보다 늘리거나 줄이면 `index.html`의 아래 숫자도 함께 바꿔주세요.
-
-```html
-<input data-frame-range type="range" min="0" max="3" value="0">
-```
-
-예를 들어 프레임이 6개라면 `max="5"`로 바꾸면 됩니다.
 
 작업 제목 티커는 `index.html`의 `work-ticker` 영역에서 문구를 바꿉니다. 화면 크기가 바뀌어도 끊기지 않도록 `work-ticker__group` 두 개가 완전히 같은 문구 순서를 갖게 유지하세요.
 

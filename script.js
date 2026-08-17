@@ -1,44 +1,61 @@
 const projects = {
   "project-01": {
-    title: "Fragments of a Small Room",
-    meta: "Animation / 2026",
+    title: "도담도담 여수",
+    meta: "Animation IP / 2026-present",
     image: "assets/images/work-01.svg",
-    alt: "Still from Fragments of a Small Room",
+    alt: "도담도담 여수 애니메이션 IP 프로젝트 대표 이미지 자리",
     description:
-      "작은 방의 빛, 반복되는 사물, 창문 밖 소리를 프레임 단위로 재구성한 2D 애니메이션입니다. 실제 작업 설명으로 교체하세요.",
+      "여수 거문도 신지끼 설화를 기반으로 캐릭터, 음악, 애니메이션 콘텐츠를 기획·제작하는 지역문화콘텐츠 프로젝트입니다. 해양문화와 자연환경 등 여수의 문화자원을 시청각 콘텐츠 요소로 재구성합니다.",
     facts: {
-      Runtime: "04:12",
-      Medium: "2D digital animation, sound",
-      Role: "Direction, animation, editing",
-      Screenings: "Sample Animation Festival 2026"
+      Period: "May.2026 - Present",
+      Medium: "Animation IP, character, music",
+      Role: "Planning, character design, music, animation",
+      Support: "전남문화재단 원스톱창작지원 프로젝트 선정",
+      Exhibition: "2026 여수세계섬박람회 연계 전시 콘텐츠"
     }
   },
   "project-02": {
-    title: "Warm Noise Archive",
-    meta: "Single-channel video / 2025",
+    title: "미지의 나에게, 스페이스 오디세이",
+    meta: "Audiovisual / 2026-present",
     image: "assets/images/work-02.svg",
-    alt: "Still from Warm Noise Archive",
+    alt: "미지의 나에게 스페이스 오디세이 오디오비주얼 작업 이미지 자리",
     description:
-      "녹음된 주변 소리와 오래된 이미지 캡처를 조합한 영상 작업입니다. 리서치 과정, 상영 장소, 협업자를 적어주세요.",
+      "클래식 음악의 구조와 정서 흐름을 우주 다큐멘터리 형식의 영상으로 구성한 공연 오디오비주얼 작업입니다. 생성형 영상을 활용해 음악적 경험을 시각적 내러티브로 재구성합니다.",
     facts: {
-      Runtime: "07:40",
-      Medium: "Video, field recording",
-      Role: "Camera, sound, editing",
-      Exhibited: "Moving Image Festival 2025"
+      Period: "Jun.2026 - Present",
+      Medium: "Audiovisual, performance video",
+      Role: "Video direction, audiovisual planning and direction",
+      Program: "2026 광주광역시 문화예술 민간단체 지원사업 선정 공연 참여",
+      Venue: "국립아시아문화전당 극장 3, Nov.2026 예정"
     }
   },
   "project-03": {
-    title: "Loop for Two Windows",
-    meta: "Installation / 2024",
+    title: "누리의 빛, 소리의 물결",
+    meta: "Audiovisual Performance / 2025",
     image: "assets/images/work-03.svg",
-    alt: "Installation documentation for Loop for Two Windows",
+    alt: "누리의 빛 소리의 물결 공연 영상 작업 이미지 자리",
     description:
-      "두 개의 화면과 반복 재생되는 애니메이션 루프를 이용한 설치 작업입니다. 공간 구성과 관람 방식을 구체적으로 적어주세요.",
+      "클래식 음악의 구조와 정서 흐름을 사극풍 영상으로 구성한 오디오비주얼 퍼포먼스입니다. 생성형 영상을 활용해 음악 정서를 인물 중심의 시각적 내러티브로 전환했습니다.",
     facts: {
-      Format: "Two-channel projection",
-      Medium: "Animation loop, installation",
-      Role: "Concept, animation, installation",
-      Venue: "Open Studio 2024"
+      Period: "Jun.2025 - Oct.2025",
+      Medium: "Audiovisual, performance operation",
+      Role: "Video direction, audiovisual planning and direction",
+      Operation: "공연 현장 영상·음향·조명 오퍼레이팅 수행",
+      Performance: "Nov.2025 오디오비주얼 퍼포먼스"
+    }
+  },
+  "project-04": {
+    title: "정물화 (Still Life)",
+    meta: "Single Album / 2024-2025",
+    image: "assets/images/video-poster.svg",
+    alt: "정물화 Still Life 음악 작업 이미지 자리",
+    description:
+      "싱글 앨범 제작 및 발매 과정에 참여한 음악 작업입니다. 가사 작성, 멜로디 구성, 보컬 레코딩과 피처링에 참여했습니다.",
+    facts: {
+      Period: "Oct.2024 - Dec.2025",
+      Medium: "Single album, music production",
+      Role: "Lyrics, melody composition, vocal featuring",
+      Process: "음원 제작 및 발매 과정 참여"
     }
   }
 };
@@ -59,12 +76,6 @@ const imageModal = document.querySelector("[data-image-modal]");
 const imageModalClose = document.querySelector("[data-image-modal-close]");
 const toTop = document.querySelector("[data-to-top]");
 const filterCount = document.querySelector("[data-filter-count]");
-const heroFrame = document.querySelector("[data-hero-frame]");
-const frameRange = document.querySelector("[data-frame-range]");
-const framePrev = document.querySelector("[data-frame-prev]");
-const frameNext = document.querySelector("[data-frame-next]");
-const frameLabel = document.querySelector("[data-frame-label]");
-const frameCaption = document.querySelector("[data-frame-caption]");
 const projectIds = Object.keys(projects);
 let lastFocusedElement = null;
 let lastFocusedImageElement = null;
@@ -73,44 +84,6 @@ let activeProjectId = projectIds[0];
 document.body.classList.add("is-enhanced");
 
 document.querySelector("[data-year]").textContent = new Date().getFullYear();
-
-const heroFrames = [
-  {
-    src: "assets/images/hero-still.svg",
-    alt: "Abstract animation still placeholder",
-    caption: "Frame 01 - Replace with a representative still or installation view."
-  },
-  {
-    src: "assets/images/still-01.svg",
-    alt: "Animation still sample 1",
-    caption: "Frame 02 - Use this area like a tiny frame-by-frame preview."
-  },
-  {
-    src: "assets/images/still-02.svg",
-    alt: "Animation still sample 2",
-    caption: "Frame 03 - Swap these SVG files for your own animation captures."
-  },
-  {
-    src: "assets/images/still-04.svg",
-    alt: "Animation still sample 4",
-    caption: "Frame 04 - Keep four to six frames for a compact mobile preview."
-  }
-];
-
-const setHeroFrame = (index) => {
-  if (!heroFrame || !frameRange) return;
-  const nextIndex = (index + heroFrames.length) % heroFrames.length;
-  const frame = heroFrames[nextIndex];
-  heroFrame.src = frame.src;
-  heroFrame.alt = frame.alt;
-  frameRange.value = String(nextIndex);
-  if (frameCaption) frameCaption.textContent = frame.caption;
-  if (frameLabel) frameLabel.textContent = `${String(nextIndex + 1).padStart(2, "0")} / ${String(heroFrames.length).padStart(2, "0")}`;
-};
-
-frameRange?.addEventListener("input", () => setHeroFrame(Number(frameRange.value)));
-framePrev?.addEventListener("click", () => setHeroFrame(Number(frameRange?.value || 0) - 1));
-frameNext?.addEventListener("click", () => setHeroFrame(Number(frameRange?.value || 0) + 1));
 
 navToggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("is-open");
