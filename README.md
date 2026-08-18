@@ -1,6 +1,6 @@
 # 이승희 Artist Portfolio
 
-GitHub Pages에 바로 올릴 수 있는 이승희 아티스트 포트폴리오 원페이지 사이트입니다. 애니메이션, 음악, 공연 현장, 웹 CV, 작가 소개, 연락처를 한 페이지에 정리하는 용도입니다.
+GitHub Pages에 바로 올릴 수 있는 이승희 아티스트 포트폴리오 원페이지 사이트입니다. 애니메이션, 음악, 참여 공연, 웹 CV, 작가 소개, 연락처를 한 페이지에 정리하는 용도입니다.
 
 ## 현재 반영된 정보
 
@@ -34,8 +34,8 @@ artist-portfolio-template/
 
 - Hero 소개 문구
 - Animation 설명
-- Music 링크와 설명
-- Live 공연 현장 이미지
+- 참여 음원 링크
+- Performance 참여 공연 링크
 - CV 웹 이력
 - About 작가 소개
 - Instagram 링크
@@ -57,8 +57,6 @@ SEO와 공유 미리보기를 위해 `<head>` 안의 아래 항목도 바꾸는 
 ```text
 background-stars.jpg
 video-poster.jpg
-live-placeholder.jpg
-live-nuri-01.jpg
 og-image.jpg
 ```
 
@@ -105,49 +103,31 @@ mp4 파일을 직접 올리는 경우:
 
 긴 영상은 GitHub 저장소 용량과 로딩 속도에 부담이 될 수 있으므로 YouTube 임베드를 권장합니다.
 
-### YouTube 음악 플레이어
+### 참여 음원
 
-`Music` 섹션에는 YouTube 음악 링크가 들어 있습니다. `file://`로 여는 로컬 미리보기에서는 YouTube 정책상 임베드 오류가 날 수 있어 링크 카드로 표시되고, GitHub Pages처럼 `https://`로 배포되면 페이지 안 플레이어로 표시됩니다.
+`참여 음원` 섹션은 제목, 역할 정보, 하단 YouTube 링크로 구성되어 있습니다. 링크를 바꾸려면 `index.html`의 `id="sound"` 섹션에서 `sound-link` 클래스가 붙은 `<a>` 태그의 `href` 값을 수정하면 됩니다.
 
-가장 쉬운 방법:
-
-1. YouTube 영상 주소에서 `watch?v=` 뒤의 영상 ID를 확인합니다.
-2. `index.html`의 `id="sound"` 섹션에서 `data-video-id` 값을 바꿉니다.
-3. 로컬 미리보기용 링크 카드의 `href`도 같은 YouTube 주소로 바꿉니다.
-
-현재 적용된 음악 링크:
+현재 적용된 링크:
 
 ```html
-data-video-id="1IC2ZjBzmBI"
+<a class="sound-link" href="https://www.youtube.com/watch?v=1IC2ZjBzmBI..." target="_blank" rel="noreferrer">
+  YouTube에서 듣기
+</a>
 ```
 
-다른 YouTube 영상으로 바꾸려면 `1IC2ZjBzmBI` 부분만 새 영상 ID로 교체하면 됩니다.
+### 참여 공연
 
-### 공연 현장
+참여 공연 섹션은 사진 갤러리 대신 공연명, 역할, 연도, 외부 링크로 구성되어 있습니다. 링크를 바꾸려면 `index.html`의 `id="live"` 섹션에서 `performance-link` 클래스가 붙은 `<a>` 태그의 `href` 값을 수정하면 됩니다.
 
-공연 현장 기록 이미지는 `assets/images/` 폴더에 넣고 `index.html`의 `id="live"` 섹션에서 파일명을 바꾸면 됩니다.
-
-예시:
+현재 적용된 링크:
 
 ```html
-<img src="assets/images/live-performance-01.jpg" alt="공연명 현장 기록">
+<a class="performance-link" href="https://kopis.or.kr/..." target="_blank" rel="noreferrer">
+  KOPIS에서 보기
+</a>
 ```
 
-클릭했을 때 크게 보이는 이미지도 같은 버튼의 `data-live-image` 값을 함께 바꿔야 합니다.
-
-```html
-<button data-live-image="assets/images/live-performance-01.jpg" data-live-caption="공연명 / 장소 / 연도">
-```
-
-공연 현장 기록 파일명 예시:
-
-```text
-live-performance-01.jpg
-sound-performance-2026.jpg
-stage-rehearsal-01.webp
-```
-
-현재 적용된 공연 현장 이미지는 `assets/images/live-nuri-01.jpg`입니다. 아직 실제 사진을 넣지 않은 공연 카드는 업로드한 배경 이미지를 바탕으로 만든 `assets/images/live-placeholder.jpg`를 사용합니다.
+공연명, 역할, 연도는 같은 섹션의 제목과 `info-list` 항목을 수정하면 됩니다.
 
 ## 동적 요소 수정
 
@@ -155,7 +135,6 @@ stage-rehearsal-01.webp
 
 - 상단 대표 작업 키워드 모션 창
 - 배경 위에 떠다니는 문양 이미지
-- 공연 현장 확대 모달
 - 스크롤 등장 효과
 - 맨 위로 이동 버튼
 
@@ -185,8 +164,7 @@ Animation 섹션의 설명을 새 작업 내용으로 바꿔줘.
 이 템플릿에는 다음 항목이 포함되어 있습니다.
 
 - 모바일 우선 반응형 레이아웃
-- 키보드 접근 가능한 메뉴와 모달
-- 이미지 lazy loading
+- 키보드 접근 가능한 메뉴
 - skip link
 - 대체 텍스트 예시
 - 사용자의 `prefers-reduced-motion` 설정을 고려한 애니메이션 완화
