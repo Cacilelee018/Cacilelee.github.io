@@ -12,6 +12,23 @@ document.body.classList.add("is-enhanced");
 const year = document.querySelector("[data-year]");
 if (year) year.textContent = new Date().getFullYear();
 
+document.querySelectorAll("[data-youtube-player]").forEach((player) => {
+  const videoId = player.dataset.videoId;
+  const title = player.dataset.title || "YouTube video player";
+  const canEmbed = ["http:", "https:"].includes(window.location.protocol);
+
+  if (!videoId || !canEmbed) return;
+
+  const iframe = document.createElement("iframe");
+  iframe.title = title;
+  iframe.loading = "lazy";
+  iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(videoId)}?rel=0&playsinline=1`;
+  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.referrerPolicy = "strict-origin-when-cross-origin";
+  iframe.allowFullscreen = true;
+  player.replaceChildren(iframe);
+});
+
 navToggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("is-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));

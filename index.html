@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="이승희 아티스트 포트폴리오. 애니메이션, 오디오비주얼, 음악, 공연 제작, 전시 및 CV를 정리한 원페이지 사이트입니다.">
-    <meta name="theme-color" content="#f7f4ee">
+    <meta name="theme-color" content="#eefcec">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
@@ -15,11 +15,25 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <title>이승희 - Artist Portfolio</title>
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css?v=clean-optimized" as="style">
+    <link rel="stylesheet" href="styles.css?v=clean-optimized">
   </head>
   <body>
     <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <div class="floating-motifs" aria-hidden="true">
+      <img class="floating-motif floating-motif--1" src="assets/images/floating-motif-1.png" alt="">
+      <img class="floating-motif floating-motif--2" src="assets/images/floating-motif-2.png" alt="">
+      <img class="floating-motif floating-motif--3" src="assets/images/floating-motif-3.png" alt="">
+      <img class="floating-motif floating-motif--4" src="assets/images/floating-motif-4.png" alt="">
+      <img class="floating-motif floating-motif--5" src="assets/images/floating-motif-1.png" alt="">
+      <img class="floating-motif floating-motif--6" src="assets/images/floating-motif-2.png" alt="">
+      <img class="floating-motif floating-motif--7" src="assets/images/floating-motif-3.png" alt="">
+      <img class="floating-motif floating-motif--8" src="assets/images/floating-motif-4.png" alt="">
+      <img class="floating-motif floating-motif--9" src="assets/images/floating-motif-1.png" alt="">
+      <img class="floating-motif floating-motif--10" src="assets/images/floating-motif-3.png" alt="">
+      <img class="floating-motif floating-motif--11" src="assets/images/floating-motif-4.png" alt="">
+    </div>
 
     <header class="site-header" data-header>
       <a class="brand" href="#hero" aria-label="Go to top">
@@ -34,7 +48,6 @@
         <a href="#video">Animation</a>
         <a href="#sound">Music</a>
         <a href="#live">Live</a>
-        <a href="#statement">Statement</a>
         <a href="#cv">CV</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -47,7 +60,7 @@
           <p class="eyebrow">Animation / Audiovisual / Sound / Performance</p>
           <h1 id="hero-title">이승희</h1>
           <p class="hero__lead">
-            지역 설화와 음악의 구조, 공연 현장의 감각을 애니메이션과 오디오비주얼 콘텐츠로 확장하는 작가입니다.
+            지역 설화와 음악의 구조, 공연 현장의 감각을 애니메이션과 오디오비주얼 콘텐츠로 확장합니다.
           </p>
         </div>
         <aside class="featured-window" aria-labelledby="featured-title">
@@ -83,8 +96,8 @@
             </div>
             <div>
               <p class="eyebrow">YouTube Embed</p>
-              <h3>미지의 나에게, 스페이스 오디세이</h3>
-              <p>클래식 음악의 구조와 정서 흐름을 우주 다큐멘터리 형식의 영상으로 구성한 오디오비주얼 작업입니다. 영상 링크가 준비되면 iframe 주소를 교체하세요.</p>
+              <h3>애니메이션 작업 01</h3>
+              <p>YouTube에 업로드한 애니메이션 링크를 넣는 자리입니다. 작품명, 제작연도, 기법, 러닝타임을 중심으로 간단히 소개하세요.</p>
             </div>
           </article>
 
@@ -97,8 +110,8 @@
             </div>
             <div>
               <p class="eyebrow">Local MP4</p>
-              <h3>누리의 빛, 소리의 물결</h3>
-              <p>사극풍 영상과 생성형 이미지를 활용해 클래식 음악의 정서를 인물 중심의 시각적 내러티브로 전환한 오디오비주얼 작업입니다.</p>
+              <h3>애니메이션 작업 02</h3>
+              <p>mp4 파일을 직접 올려 재생하는 자리입니다. 완성본, 티저, 움직임 테스트처럼 애니메이션 자료를 배치하세요.</p>
             </div>
           </article>
         </div>
@@ -110,27 +123,34 @@
             <p class="eyebrow">Music</p>
             <h2 id="sound-title">음악</h2>
           </div>
-          <a class="button button--light" href="https://soundcloud.com/" target="_blank" rel="noreferrer">SoundCloud 열기</a>
         </div>
 
         <div class="sound-layout">
           <article class="sound-player">
-            <iframe
-              title="SoundCloud player for sample music work"
-              loading="lazy"
-              scrolling="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%239b3d2f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe>
+            <div
+              class="youtube-embed"
+              data-youtube-player
+              data-video-id="1IC2ZjBzmBI"
+              data-title="정물화 (Still Life)"
+              data-watch-url="https://www.youtube.com/watch?v=1IC2ZjBzmBI&amp;list=RD1IC2ZjBzmBI&amp;start_radio=1">
+              <a class="youtube-fallback" href="https://www.youtube.com/watch?v=1IC2ZjBzmBI&amp;list=RD1IC2ZjBzmBI&amp;start_radio=1" target="_blank" rel="noreferrer">
+                <span class="youtube-fallback__play" aria-hidden="true">▶</span>
+                <span>
+                  <strong>YouTube에서 재생</strong>
+                  <em>로컬 미리보기에서는 새 창으로 열립니다.</em>
+                </span>
+              </a>
+            </div>
           </article>
           <div class="sound-notes">
             <p class="eyebrow">Track Notes</p>
             <h3>정물화 (Still Life)</h3>
             <p>
-              싱글 앨범 제작 및 발매 과정에 참여한 음악 프로젝트입니다. 작사, 멜로디 라인 작곡,
-              보컬 피처링과 레코딩 과정에 참여했습니다. SoundCloud 트랙이 준비되면 위 플레이어의 트랙 ID를 교체하세요.
+              싱글 앨범 제작 및 발매 과정에 참여한 음악 프로젝트입니다.<br>
+              작사, 멜로디 라인 작곡, 보컬 피처링과 레코딩 과정에 참여했습니다.
             </p>
             <dl class="info-list">
-              <div><dt>Format</dt><dd>Single album / SoundCloud embed</dd></div>
+              <div><dt>Format</dt><dd>Single album</dd></div>
               <div><dt>Role</dt><dd>Lyrics, melody composition, vocal featuring</dd></div>
               <div><dt>Period</dt><dd>Oct.2024 - Dec.2025</dd></div>
             </dl>
@@ -146,37 +166,18 @@
           </div>
         </div>
         <div class="live-grid">
-          <button type="button" class="live-card live-card--large" data-live-image="assets/images/live-01.svg" data-live-caption="미지의 나에게, 스페이스 오디세이 / 국립아시아문화전당 극장 3 / 2026 예정">
-            <img src="assets/images/live-01.svg" alt="미지의 나에게 스페이스 오디세이 공연 현장 기록 자리" width="1100" height="760" loading="lazy">
+          <button type="button" class="live-card live-card--large" data-live-image="assets/images/live-placeholder.jpg" data-live-caption="미지의 나에게, 스페이스 오디세이 / 국립아시아문화전당 극장 3 / 2026 예정">
+            <img src="assets/images/live-placeholder.jpg" alt="연두색 별무늬 배경 대체 갤러리 이미지" width="1012" height="1800" loading="lazy">
             <span><strong>미지의 나에게, 스페이스 오디세이</strong><em>ACC 극장 3 / 2026 예정</em></span>
           </button>
-          <button type="button" class="live-card" data-live-image="assets/images/live-02.svg" data-live-caption="누리의 빛, 소리의 물결 / 오디오비주얼 퍼포먼스 / 2025">
-            <img src="assets/images/live-02.svg" alt="누리의 빛 소리의 물결 공연 현장 기록 자리" width="760" height="920" loading="lazy">
+          <button type="button" class="live-card" data-live-image="assets/images/live-nuri-01.jpg" data-live-caption="누리의 빛, 소리의 물결 / 오디오비주얼 퍼포먼스 / 2025">
+            <img src="assets/images/live-nuri-01.jpg" alt="누리의 빛 소리의 물결 공연 현장" width="1125" height="2000" loading="lazy">
             <span><strong>누리의 빛, 소리의 물결</strong><em>오디오비주얼 퍼포먼스 / 2025</em></span>
           </button>
-          <button type="button" class="live-card" data-live-image="assets/images/live-03.svg" data-live-caption="공연 현장 영상·음향·조명 오퍼레이팅 기록">
-            <img src="assets/images/live-03.svg" alt="공연 현장 오퍼레이팅과 리허설 기록 자리" width="760" height="920" loading="lazy">
+          <button type="button" class="live-card" data-live-image="assets/images/live-placeholder.jpg" data-live-caption="공연 현장 영상·음향·조명 오퍼레이팅 기록">
+            <img src="assets/images/live-placeholder.jpg" alt="연두색 별무늬 배경 대체 갤러리 이미지" width="1012" height="1800" loading="lazy">
             <span><strong>Performance Operation</strong><em>Video / Sound / Lighting</em></span>
           </button>
-        </div>
-      </section>
-
-      <section class="section section--statement" id="statement" aria-labelledby="statement-title" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Artist Statement</p>
-          <h2 id="statement-title">작가노트</h2>
-        </div>
-        <div class="statement">
-          <p>
-            이승희는 지역 설화, 해양문화, 자연환경처럼 장소에 축적된 이야기를 캐릭터, 음악,
-            애니메이션으로 재구성합니다. 영상은 공연의 배경이 아니라 음악의 구조와 정서를 다시 읽게 하는
-            또 하나의 무대가 됩니다.
-          </p>
-          <p>
-            최근 작업은 여수 거문도 신지끼 설화를 기반으로 한 애니메이션 IP 제작,
-            클래식 공연의 오디오비주얼 연출, 어린이·가족 대상 체험형 전시 콘텐츠 기획으로 이어지고 있습니다.
-            기획부터 제작, 음악, 현장 오퍼레이팅까지 연결되는 과정을 통해 시청각 경험의 밀도를 설계합니다.
-          </p>
         </div>
       </section>
 
@@ -184,7 +185,6 @@
         <div class="section-heading">
           <p class="eyebrow">CV</p>
           <h2 id="cv-title">이력</h2>
-          <a class="button button--light" href="assets/documents/artist-cv.pdf" download="lee-seunghee-cv.pdf">PDF 다운로드</a>
         </div>
 
         <div class="cv-layout">
@@ -232,7 +232,7 @@
         <div class="about-layout">
           <div class="about-copy">
             <p>
-              이승희는 애니메이션, 오디오비주얼, 음악, 공연 제작을 오가며 지역문화콘텐츠와 체험형 전시를 기획·제작합니다.
+              저는 애니메이션, 오디오비주얼, 음악을 오가며 지역문화콘텐츠와 공연 콘텐츠를 제작합니다.
               설화와 장소의 감각, 클래식 음악의 흐름, 현장 퍼포먼스의 시간을 시청각 콘텐츠로 번역하는 작업을 이어가고 있습니다.
             </p>
             <dl class="info-list">
@@ -261,7 +261,7 @@
     <dialog class="image-modal" data-image-modal aria-labelledby="image-modal-title">
       <button class="modal-close" type="button" data-image-modal-close aria-label="닫기">×</button>
       <figure>
-        <img data-image-modal-image src="assets/images/live-01.svg" alt="" width="1200" height="850">
+        <img data-image-modal-image src="assets/images/live-placeholder.jpg" alt="" width="1012" height="1800">
         <figcaption id="image-modal-title" data-image-modal-caption>미지의 나에게, 스페이스 오디세이 / 국립아시아문화전당 극장 3 / 2026 예정</figcaption>
       </figure>
     </dialog>
