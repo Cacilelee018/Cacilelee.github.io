@@ -541,11 +541,20 @@ main,
   line-height: 1.35;
 }
 
+.section-entry__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.24rem 0.52rem;
+}
+
 .sound-link {
   display: inline-flex;
   width: fit-content;
   color: var(--ink);
+  font-size: clamp(0.62rem, 1.08vw, 0.72rem);
   font-weight: 650;
+  line-height: 1.35;
   text-decoration: underline;
   text-underline-offset: 0.24em;
 }
@@ -581,10 +590,17 @@ main,
   max-width: 760px;
 }
 
+.section--sound .sound-layout,
+#live .performance-info {
+  gap: 0.34rem;
+}
+
 .performance-link {
   width: fit-content;
   color: var(--ink);
+  font-size: clamp(0.62rem, 1.08vw, 0.72rem);
   font-weight: 650;
+  line-height: 1.35;
   text-decoration: underline;
   text-underline-offset: 0.24em;
 }
@@ -1087,8 +1103,8 @@ main,
   }
 
   .sound-link {
-    font-size: 0.75rem;
-    line-height: 1.58;
+    font-size: 0.68rem;
+    line-height: 1.35;
   }
 
   .info-list {
@@ -1102,8 +1118,8 @@ main,
   }
 
   .performance-link {
-    font-size: 0.75rem;
-    line-height: 1.58;
+    font-size: 0.68rem;
+    line-height: 1.35;
   }
 
   .cv-block,
