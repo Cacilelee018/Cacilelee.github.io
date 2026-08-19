@@ -471,8 +471,7 @@ main,
   align-items: center;
 }
 
-.video-card h3,
-.sound-notes h3 {
+.video-card h3 {
   margin: 0;
   font-size: clamp(1rem, 2vw, 1.24rem);
   line-height: 1.25;
@@ -523,10 +522,28 @@ main,
   grid-template-columns: 1fr;
 }
 
+.section-entry {
+  display: grid;
+  width: fit-content;
+  max-width: 100%;
+  gap: 0.16rem;
+}
+
+.section-entry time {
+  color: var(--muted);
+  font-size: clamp(0.56rem, 1.05vw, 0.66rem);
+  line-height: 1.2;
+}
+
+.section-entry strong {
+  color: var(--ink);
+  font-size: clamp(0.72rem, 1.25vw, 0.84rem);
+  line-height: 1.35;
+}
+
 .sound-link {
   display: inline-flex;
   width: fit-content;
-  margin-top: 1.05rem;
   color: var(--ink);
   font-weight: 650;
   text-decoration: underline;
@@ -562,12 +579,6 @@ main,
 
 .performance-info {
   max-width: 760px;
-}
-
-.performance-info h3 {
-  margin: 0;
-  font-size: clamp(1rem, 2vw, 1.24rem);
-  line-height: 1.25;
 }
 
 .performance-link {
@@ -849,8 +860,7 @@ main,
     gap: 0.95rem;
   }
 
-  .video-card h3,
-  .sound-notes h3 {
+  .video-card h3 {
     font-size: 0.96rem;
   }
 
@@ -1061,8 +1071,7 @@ main,
     aspect-ratio: 16 / 9;
   }
 
-  .video-card h3,
-  .sound-notes h3 {
+  .video-card h3 {
     font-size: 0.84rem;
   }
 
@@ -1078,7 +1087,6 @@ main,
   }
 
   .sound-link {
-    margin-top: 0.78rem;
     font-size: 0.75rem;
     line-height: 1.58;
   }
@@ -1091,10 +1099,6 @@ main,
   .info-list div {
     grid-template-columns: 1fr;
     gap: 0.08rem;
-  }
-
-  .performance-info h3 {
-    font-size: 0.84rem;
   }
 
   .performance-link {

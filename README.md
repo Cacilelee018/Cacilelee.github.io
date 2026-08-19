@@ -7,7 +7,7 @@ GitHub Pages에 바로 올릴 수 있는 이승희 아티스트 포트폴리오 
 - 이름: 이승희
 - 이메일: cacile.lee.018@gmail.com
 - 주요 매체: Animation, Audiovisual, Sound, Performance
-- 웹 CV 구성: Project Experience, Exhibitions / Performances, Professional Programs, Certifications / Skills
+- 웹 CV 구성: Project Experience, Exhibitions / Performances, Professional Programs
 
 ## 파일 구조
 
@@ -105,7 +105,7 @@ mp4 파일을 직접 올리는 경우:
 
 ### 참여 음원
 
-`참여 음원` 섹션은 제목, 역할 정보, 하단 YouTube 링크로 구성되어 있습니다. 링크를 바꾸려면 `index.html`의 `id="sound"` 섹션에서 `sound-link` 클래스가 붙은 `<a>` 태그의 `href` 값을 수정하면 됩니다.
+`참여 음원` 섹션은 날짜, 음원명, YouTube 링크만 남긴 간단한 구조입니다. 링크를 바꾸려면 `index.html`의 `id="sound"` 섹션에서 `sound-link` 클래스가 붙은 `<a>` 태그의 `href` 값을 수정하면 됩니다.
 
 현재 적용된 링크:
 
@@ -117,7 +117,7 @@ mp4 파일을 직접 올리는 경우:
 
 ### 참여 공연
 
-참여 공연 섹션은 사진 갤러리 대신 공연명, 역할, 연도, 외부 링크로 구성되어 있습니다. 링크를 바꾸려면 `index.html`의 `id="live"` 섹션에서 `performance-link` 클래스가 붙은 `<a>` 태그의 `href` 값을 수정하면 됩니다.
+참여 공연 섹션은 날짜, 공연명, 외부 링크만 남긴 간단한 구조입니다. 링크를 바꾸려면 `index.html`의 `id="live"` 섹션에서 `performance-link` 클래스가 붙은 `<a>` 태그의 `href` 값을 수정하면 됩니다.
 
 현재 적용된 링크:
 
@@ -126,8 +126,6 @@ mp4 파일을 직접 올리는 경우:
   KOPIS에서 보기
 </a>
 ```
-
-공연명, 역할, 연도는 같은 섹션의 제목과 `info-list` 항목을 수정하면 됩니다.
 
 ## 동적 요소 수정
 
